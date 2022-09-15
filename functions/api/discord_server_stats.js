@@ -26,7 +26,7 @@ router.get("/discord", function(req, res) {
     const json = JSON.parse(body);
     let text;
 
-    if (invite === "INVALID" || (json.content.message === "Unknown Invite" && json.content.code === 10006)) {
+    if (invite === "INVALID" || json.text === "undefined") {
       text = "INVALID";
     } else {
       text = ((displayOnlineCount === "true") ? json.approximate_presence_count + "/" : "") + json.approximate_member_count;
