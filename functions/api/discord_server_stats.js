@@ -15,9 +15,9 @@ router.get("/discord", function(req, res) {
   if (invite !== null) {
     if (invite.indexOf("/invite/") > -1) {
       invite = invite.slice(invite.lastIndexOf("/")) + 1;
-    } else {
-      invite = "INVALID";
     }
+  } else {
+    invite = "INVALID";
   }
 
   const requestUrl = "https://discord.com/api/v10/invites/" + invite + "?with_counts=true";
