@@ -1,7 +1,6 @@
 {
   "projects": {
-    "default": "lametricapps-firebase",
-    "production": "lametricapps-firebase"
+    "default": "lametricapps-firebase"
   },
   "targets": {},
   "etags": {}
