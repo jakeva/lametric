@@ -3,6 +3,3 @@ node_modules
 
 # Ignore .log files
 *.log
-
-# Ignore .firebaserc
-.firebaserc
