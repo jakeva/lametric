@@ -38,6 +38,8 @@ router.get("/mc", function(req, res) {
 
     res.send(content);
   });
+
+  console.log("GET /api/minecraft_server_stats/mc?icon=" + icon + "&server=" + server + "&port=" + port + "&max_players_choice=" + maxPlayers);
 });
 
 module.exports = router;

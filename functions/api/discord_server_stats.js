@@ -40,6 +40,8 @@ router.get("/discord", function(req, res) {
 
     res.send(content);
   });
+
+  console.log("GET /api/discord_server_stats/discord?icon=" + icon + "&invite=" + invite + "&display_online_count=" + displayOnlineCount);
 });
 
 module.exports = router;
